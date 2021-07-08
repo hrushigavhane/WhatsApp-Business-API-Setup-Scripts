@@ -107,9 +107,9 @@ services:
     restart: unless-stopped
     command: ["/opt/whatsapp/bin/wait_on_mysql.sh", "/opt/whatsapp/bin/launch_within_docker.sh"]
     ports:
-      - "6250-6253"
+        - "6250-6253"
     volumes:
-     - whatsappMedia:/usr/local/wamedia
+       - whatsappMedia:/usr/local/wamedia
     env_file:
       - db.env
     environment:
